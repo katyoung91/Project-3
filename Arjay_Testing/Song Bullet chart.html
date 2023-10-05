@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plotly Chart Display</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div id="myDiv"></div>
+
+    <script>
+        var data = [
+            {
+                type: "indicator",
+                mode: "number+gauge+delta",
+                value: 87,
+                domain: { x: [0.1, 1], y: [0, 1] },
+                title: { text: "<b>popularity</b><br><span style='color: gray; font-size:0.8em'>Song</span>" },
+                delta: { reference: 64 },
+                gauge: {
+                    shape: "bullet",
+                    axis: { range: [null, 100] },
+                    threshold: {
+                        line: { color: "red", width: 2 },
+                        thickness: 0.75,
+                        value: 64
+                    },
+                    steps: [
+                        { range: [0, 20], color: "#033f63" },
+                        { range: [20, 40], color: "#28666e" },
+                        { range: [40, 60], color: "#7c9885" },
+                        { range: [60, 80], color: "#b5b682" },
+                        { range: [80, 100], color: "#fedc97" }
+                    ],
+                    bar: { color: "#f2f2f2" }
+                }
+            }
+        ];
+
+        var layout = { width: 600, height: 250 };
+        var config = { responsive: true };
+
+        Plotly.newPlot('myDiv', data, layout, config);
+    </script>
+</body>
+</html>
