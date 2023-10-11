@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 jumbotron text-center">
+          <h1>Welcome to our App!</h1>
+          <img src="./static/taylor-data.png" class="img-fluid mx-auto img-rounded" alt="Taylor and Data Viz Venn Diagram" width="600" height="375">
+          <p>Use the following routes to view the data</p>
+          <p><strong>For json data views:</strong></p>
+          <p><a href="/songdata">/songdata</a></a></p>
+          <p><a href="/albumdata">/albumdata</a></p>
+          <p><a href="/metadata">/metadata</a></p>
+          <p><strong>For dashboard pages:</strong></p>
+          <p><a href="/songs">/songs</a></p>
+          <p><a href="/albums">/albums</a></p>
+        </div>
+      </div>
+
+      {% endblock %}

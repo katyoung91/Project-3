@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Taylor Swift Song Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+          <div class="well">
+            <h5>Select Song</h5>
+            <select id="selDatasetSong" onchange="optionChanged(this.value)"></select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Song Info</h3>
+            </div>
+            <div id="song-info" class="panel-body"></div>
+          </div>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col-md-5">
+          <div id="scatterpolar"></div>
+        </div>
+        <div class="col-md-5">
+          <div id="bullet"></div>
+        </div>
+      </div>
+    </div>
+      
+</div>
+
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="./static/taylor_data.js"></script>
+<script src="./static/song_plots.js"></script>
+</body>
+</html>
+
+{% endblock %}
