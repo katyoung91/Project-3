@@ -1,7 +1,7 @@
 # Project-3
 Repository for Project 3
 
-Team Members: Kat Young, Amie Shank, Bolima Tafah, Arjay Thakoorie, Siobhan Byrne
+##Team Members: Kat Young, Amie Shank, Bolima Tafah, Arjay Thakoorie, Siobhan Byrne##
 
 Our project creates a Flask App Webpage that pulls Spotify data on Taylor Swift to create 2 interactive dashboards, one for her songs and one for her albums.
 
@@ -17,7 +17,7 @@ This repo contains:
 - A gitignore file, a .DS_store file and this readme
 - Our PPT file for presentation day
 
-***Important Note The flask app uses code that only works on a down patch of sqlalchemy. sqlalchemy 2.0 is funky when working with certain functions. Using: <pip install --force-reinstall 'sqlalchemy<2.0.0'> will allow the flask app to pull certain pages correctly. 
+***Important Note*** The flask app uses code that only works on a down patch of sqlalchemy. sqlalchemy 2.0 is funky when working with certain functions. Using: <pip install --force-reinstall 'sqlalchemy<2.0.0'> will allow the flask app to pull certain pages correctly. 
 
 When all files are downloaded, our app.py file can be launched locally. The app references and pulls data from a SQLite database used to store our Taylor Swift data as well as pulling from a local js file containing json data. When the app is launched it will first display a landing page showing all the possible routes that can be input into the URL. Each route can be clicked to directly take you to each page. 
 - The /songdata route displays the list of unique songs in the dataset
