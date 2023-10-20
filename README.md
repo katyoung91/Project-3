@@ -1,13 +1,13 @@
 # Project-3
 Repository for Project 3
 
-##Team Members: Kat Young, Amie Shank, Bolima Tafah, Arjay Thakoorie, Siobhan Byrne##
+***Team Members: Kat Young, Amie Shank, Bolima Tafah, Arjay Thakoorie, Siobhan Byrne***
 
 Our project creates a Flask App Webpage that pulls Spotify data on Taylor Swift to create 2 interactive dashboards, one for her songs and one for her albums.
 
 With Taylor Swift showing up in the news a lot recently because of her Era's tour and possible thing with Travis Kelce, we thought analyzing and creating dashboards on Taylor Swift would be fun to do but also give approachable data for anyone to look at. 
 
-This repo contains:
+This `repo` contains:
 - A testing folder containing some base work from Arjay
 - The Resources folder which houses the original csv data, updated csv data, a json version of our data, the sqlite database and general database file of our data
 - A Jupyternotebook file that was used for some misc data checks and ensuring the CSV file was formated the way we needed
